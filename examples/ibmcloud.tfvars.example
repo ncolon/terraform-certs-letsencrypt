@@ -1,0 +1,9 @@
+app_subdomain = "apps.letsencrypt.ibmglb.ibm-gtmaa.dev"
+
+dns_provider = "ibmcloud"
+
+#letsencrypt_api_endpoint = "https://acme-v02.api.letsencrypt.org/directory"
+letsencrypt_email = "your@email.com"
+
+ibmcloud_api_key  = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+ibmcloud_username = "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB"

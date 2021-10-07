@@ -1,0 +1,12 @@
+dns_provider = "azure"
+
+app_subdomain = "apps.letsencrypt.azure.ibm-gtmaa.dev"
+
+#letsencrypt_api_endpoint = "https://acme-v02.api.letsencrypt.org/directory"
+letsencrypt_email = "your@email.com"
+
+azure_resource_group  = "your-dns-resource-group"
+azure_subscription_id = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+azure_tenant_id       = "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB"
+azure_client_id       = "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC"
+azure_client_secret   = "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD"
