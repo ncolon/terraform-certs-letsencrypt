@@ -11,3 +11,6 @@
 
 # Mac stuff
 .DS_Store
+
+router.crt
+router.key

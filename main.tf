@@ -103,21 +103,15 @@ locals {
     local.aws_configured ? acme_certificate.app_subdomain_certificate_aws[0].certificate_pem : (
       # local.ibmcloud_configured ? acme_certificate.app_subdomain_certificate_ibmcloud[0].certificate_pem : (
       local.cloudflare_configured ? acme_certificate.app_subdomain_certificate_cloudflare[0].certificate_pem : ""
-      # )
-    )
-  )
+  ))
   router_key = local.azure_configured ? acme_certificate.app_subdomain_certificate_azure[0].private_key_pem : (
     local.aws_configured ? acme_certificate.app_subdomain_certificate_aws[0].private_key_pem : (
       # local.ibmcloud_configured ? acme_certificate.app_subdomain_certificate_ibmcloud[0].private_key_pem : (
       local.cloudflare_configured ? acme_certificate.app_subdomain_certificate_cloudflare[0].private_key_pem : ""
-      # )
-    )
-  )
+  ))
   router_issuer = local.azure_configured ? acme_certificate.app_subdomain_certificate_azure[0].issuer_pem : (
     local.aws_configured ? acme_certificate.app_subdomain_certificate_aws[0].issuer_pem : (
       # local.ibmcloud_configured ? acme_certificate.app_subdomain_certificate_ibmcloud[0].issuer_pem : (
       local.cloudflare_configured ? acme_certificate.app_subdomain_certificate_cloudflare[0].issuer_pem : ""
-      # )
-    )
-  )
+  ))
 }
