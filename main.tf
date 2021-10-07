@@ -7,8 +7,6 @@ terraform {
   }
 }
 
-# use letsencrypt to generate master cert and router cert
-# we'll use cloudflare as a dns challenge
 provider "acme" {
   server_url = var.letsencrypt_api_endpoint
 }
