@@ -5,7 +5,7 @@ variable "letsencrypt_email" {
 
 variable "letsencrypt_api_endpoint" {
   default     = "https://acme-staging-v02.api.letsencrypt.org/directory"
-  description = "Let's Encrypt API endpoint, defaults to staging. For prod set in tfvars to: https://acme-v02.api.letsencrypt.org/directory"
+  description = "Let's Encrypt API endpoint, defaults to staging directory. For prod set in tfvars to: https://acme-v02.api.letsencrypt.org/directory"
 }
 
 
