@@ -10,12 +10,6 @@ $ terraform plan
 $ terraform apply
 $ terraform output --raw router_cert > router.crt
 $ terraform output --raw router_key > router.key
-$ oc create secret tls letsencrypt-certs \
-    --cert=router.crt \
-    --key=router.key \
-    -n openshift-ingress
-$ oc patch ingresscontroller.operator default \
-    --type=merge -p \
-    '{"spec":{"defaultCertificate": {"name": "letsencrypt-certs"}}}' \
-    -n openshift-ingress-operator
+$ oc create secret tls letsencrypt-certs --cert=router.crt --key=router.key -n openshift-ingress
+$ oc patch ingresscontroller.operator default --type=merge -p '{"spec":{"defaultCertificate": {"name": "letsencrypt-certs"}}}' -n openshift-ingress-operator
 ```
