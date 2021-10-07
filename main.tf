@@ -30,7 +30,7 @@ resource "acme_certificate" "app_subdomain_certificate_azure" {
   subject_alternative_names = ["*.${var.app_subdomain}"]
 
   dns_challenge {
-    provider = var.dns_provider
+    provider = "azure"
 
     config = {
       AZURE_CLIENT_ID       = var.azure_client_id
@@ -51,7 +51,7 @@ resource "acme_certificate" "app_subdomain_certificate_aws" {
   subject_alternative_names = ["*.${var.app_subdomain}"]
 
   dns_challenge {
-    provider = var.dns_provider
+    provider = "route53"
 
     config = {
       AWS_ACCESS_KEY_ID     = var.aws_access_key
@@ -68,7 +68,7 @@ resource "acme_certificate" "app_subdomain_certificate_aws" {
 #   subject_alternative_names = ["*.${var.app_subdomain}"]
 
 #   dns_challenge {
-#     provider = var.dns_provider
+#     provider = "ibmcloud"
 
 #     config = {
 #       SOFTLAYER_API_KEY  = var.ibmcloud_api_key
@@ -85,7 +85,7 @@ resource "acme_certificate" "app_subdomain_certificate_cloudflare" {
   subject_alternative_names = ["*.${var.app_subdomain}"]
 
   dns_challenge {
-    provider = var.dns_provider
+    provider = "cloudflare"
 
     config = {
       CF_API_KEY   = var.cloudflare_api_key
