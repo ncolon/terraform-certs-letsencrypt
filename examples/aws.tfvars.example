@@ -1,6 +1,6 @@
 dns_provider = "aws"
 
-app_subdomain = "apps.letsencrypt.azure.ibm-gtmaa.dev"
+app_subdomain = "apps.letsencrypt.aws.ibm-gtmaa.dev"
 
 #letsencrypt_api_endpoint = "https://acme-v02.api.letsencrypt.org/directory"
 letsencrypt_email = "your@email.com"

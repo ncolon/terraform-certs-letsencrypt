@@ -1,4 +1,4 @@
-app_subdomain = "apps.letsencrypt.ibmglb.ibm-gtmaa.dev"
+app_subdomain = "apps.letsencrypt.ibm.ibm-gtmaa.dev"
 
 dns_provider = "ibmcloud"
 
