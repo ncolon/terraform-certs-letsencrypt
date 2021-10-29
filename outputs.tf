@@ -7,6 +7,6 @@ output "router_key" {
   value     = local.router_key
 }
 
-output "router_issuer" {
+output "router_ca" {
   value = local.router_issuer
 }

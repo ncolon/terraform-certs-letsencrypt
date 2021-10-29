@@ -14,3 +14,5 @@
 
 router.crt
 router.key
+router-ca.crt
+user-ca-bundle.yaml
